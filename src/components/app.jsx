@@ -1,12 +1,12 @@
 import Login from "./Login";
 
-let isLoggedIn = false;
+let isRegistred = false;
 
 function App() {
   return (
     <div className="container">
       <h1 className="title">TipsForm</h1>
-      {isLoggedIn ? <h1>Bem-vindo ao curso</h1> : <Login />}
+      <Login register={isRegistred} />
     </div>
   );
 }

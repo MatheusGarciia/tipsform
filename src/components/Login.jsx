@@ -1,11 +1,14 @@
 import Input from "./Input";
 
-function Login() {
+function Login(props) {
   return (
     <form className="form" action="">
       <Input type="text" pH="Nome de Usuário" />
       <Input type="password" pH="Senha" />
-      <button type="submit">Login</button>
+      {props.register === false && (
+        <Input type="password" pH="Confirme a senha" />
+      )}
+      <button type="submit">{props.register ? "Login" : "Register"}</button>
     </form>
   );
 }
