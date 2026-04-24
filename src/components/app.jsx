@@ -2,28 +2,10 @@ function App() {
   return (
     <div className="container">
       <h1 className="title">TipsForm</h1>
-      <form action="">
-        <div>
-          <input
-            className="form"
-            type="text"
-            id="name"
-            placeholder="Nome de Usuário"
-          />
-        </div>
-        <div>
-          <input
-            className="form"
-            type="password"
-            id="password"
-            placeholder="senha"
-          />
-        </div>
-        <div>
-          <button className="button" type="submit">
-            Login
-          </button>
-        </div>
+      <form className="form" action="">
+        <input type="text" id="name" placeholder="Nome de Usuário" />
+        <input type="password" id="password" placeholder="senha" />
+        <button type="submit">Login</button>
       </form>
     </div>
   );
